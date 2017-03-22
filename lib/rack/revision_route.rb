@@ -12,7 +12,6 @@ module Rack
     end
 
     def call(env)
-      debugger
       if env["REQUEST_METHOD".freeze] == "GET".freeze && env["PATH_INFO".freeze] == path
         body = revision.to_s + "\n"
         [200, {"Content-Type" => "text/plain"}, [body]]
