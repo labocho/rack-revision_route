@@ -1,5 +1,5 @@
 module Rack
-  module RevisionRoute
+  class RevisionRoute
     VERSION = "0.1.0"
   end
 end
